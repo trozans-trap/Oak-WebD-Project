@@ -3,5 +3,20 @@
 	margin-top: 3%;
 	height: 800px;
 }*/
+.subcontainer{
+	margin: 4% 0% 4% 0%;
+}
 
+.home{
+	/*background-image: url(image_1.jpg);*/
+	height: 565px;
+	margin-top: 0.5%;
+}
 
+.midimg{
+	
+}
+
+.imgrow{
+	margin-bottom: 2%;
+}
