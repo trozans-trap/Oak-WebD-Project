@@ -25,24 +25,60 @@
        
 	<div class="container">
 	  <div class="subcontainer">
-		<nav class="navbar  bg-light navbar-light ">
+		<nav class="" style="width: 108%">
 			<img src="Images\logo.png" class="img-fluid">
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+            <span style="font-size:30px;cursor:pointer;margin-left: 88%;" onclick="openNav()">&#9776;</span>
+            <div id="mySidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+               <ul class="list">
+               	<li>
+               		<span class="sublisthead">HOME</span>
+                    <ul class="sublist">
+                    	<li>Default</li>
+                    	<li>Architecture</li>
+                    	<li>Slider Full Width</li>
+                    </ul>
+               	</li>
+               	<li>
+               		<span class="sublisthead">ABOUT</span>
+               	</li>
+               	<li>
+               		<span class="sublisthead">PORTFOLIO</span>
+                    <ul class="sublist">
+                    	<li>Portfolio 1 column</li>
+                    	<li>Portfolio 2 column</li>
+                    	<li>Portfolio Masonry </li>
+                    	<li>Portfolio dribble </li>
 
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-               <ul class="navbar-nav">
-                 <li class="nav-item">
-                   <a class="nav-link" href="#">Link</a>
-                 </li>
-                 <li class="nav-item">
-                   <a class="nav-link" href="#">Link</a>
-                 </li>
-                 <li class="nav-item">
-                   <a class="nav-link" href="#">Link</a>
-                 </li>
+                    </ul>
+               	</li>
+               	<li>
+               		<span class="sublisthead">BLOG</span>
+                    <ul class="sublist">
+                    	<li>Blog Default</li>
+                    	<li>Blog Timeline</li>
+                    	<li>Blog Single</li>
+
+                    </ul>
+               	</li>
+               	<li>
+               		<span class="sublisthead">CONTACT</span>
+               	</li>
                </ul>
+
+               <div class=" sideicon row" style="margin-left: 50px;">
+               	<center><i class="fab fa-facebook-f icons"></i>
+   	   	   	    <i class="fab fa-twitter icons"></i>
+   	   	   	    <i class="fab fa-flickr icons"></i>
+   	   	   	    <i class="fab fa-dribbble-square icons"></i>
+   	   	   	    <i class="fab fa-pinterest icons"></i>
+   	   	   	    <i class="fab fa-linkedin-in icons"></i></center>
+               </div>
+               <br>
+               <div class="textnav" >
+               	T: 003 124 115
+                E: info@mail.com
+               </div>
             </div>
 			
 		</nav>
@@ -53,6 +89,9 @@
        	  <img class="slider" src="Images\image_1.jpg">
           <img class="slider" src="Images\image_2.jpg">
           <img class="slider" src="Images\image_3.jpg">
+          <div class="elegance" >
+              <span style="font-weight:800">Pure</span><span class="back" style="background:#7beec7;">Elegance</span>         	
+          </div>
        </div>
 
 
@@ -70,8 +109,6 @@
                      <br>
                      <br>
 				</div>
-				<div class="col-md-1">
-				</div>
 				<div class="col-md-4">
 					<img class="slide" src="Images\about_img.jpg">
                     <img class="slide" src="Images\about_img2.jpg">
@@ -88,17 +125,19 @@
 		<div class="subcontainer">
 		<div class="row">
 			<div class="col-lg-4">
-				<i class="fab fa-pencil-ruler"></i>
+				<i class="fas fa-pencil-ruler icons2"></i>
 				<h6>BRANDING</h6>
                 Expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because procure him.
 			</div>
 			<div class="col-lg-4">
-				<i class="fab fa-globe-americas"></i>
+				
+				<i class="fas fa-globe icons2"></i>
 				<h6>PLAN OF WORK</h6>
                 Expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because procure him.
 			</div>
 			<div class="col-lg-4">
-				<i class="fab fa-brush"></i>
+				
+				<i class="fas fa-brush icons2"></i>
 				<h6>Ilustration</h6>
 				Expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because procure him.
 			</div>
@@ -116,47 +155,56 @@
         <!-- image-grid -->
 
       <div class="subcontainer">
-		<div class="row imgrow">
-			<div class="col-sm-12 col-md-4"><img src="Images\Home-Portfolio\img_1.jpg"></div>
-			<div class="col-sm-12 col-md-4 midimg"><img src="Images\Home-Portfolio\img_2.jpg"></div>
-			<div class="col-sm-12 col-md-4"><img src="Images\Home-Portfolio\img_3.jpg"></div>
+		<div class="row imgrow ">
+			<div class="col-sm-12 col-md-4 hoverstyle "><img src="Images\Home-Portfolio\img_1.jpg" ></div>
+			<div class="col-sm-12 col-md-4 hoverstyle  midimg"><img src="Images\Home-Portfolio\img_2.jpg" ></div>
+			<div class="col-sm-12 col-md-4 hoverstyle "><img src="Images\Home-Portfolio\img_3.jpg" ></div>
 		</div>
-		<div class="row imgrow">
-			<div class="col-sm-12 col-md-4"><img src="Images\Home-Portfolio\img_4.jpg"></div>
-			<div class="col-sm-12 col-md-4 midimg"><img src="Images\Home-Portfolio\img_5.jpg"></div>
-			<div class="col-sm-12 col-md-4"><img src="Images\Home-Portfolio\img_6.jpg"></div>
+		<div class="row imgrow ">
+			<div class="col-sm-12 col-md-4 hoverstyle "><img src="Images\Home-Portfolio\img_4.jpg" ></div>
+			<div class="col-sm-12 col-md-4 hoverstyle  midimg"><img src="Images\Home-Portfolio\img_5.jpg" ></div>
+			<div class="col-sm-12 col-md-4 hoverstyle "><img src="Images\Home-Portfolio\img_6.jpg" ></div>
 		</div>
-		<div class="row imgrow">
-			<div class="col-sm-12 col-md-4"><img src="Images\Home-Portfolio\img_7.jpg"></div>
-			<div class="col-sm-12 col-md-4 midimg"><img src="Images\Home-Portfolio\img_8.jpg"></div>
-			<div class="col-sm-12 col-md-4"><img src="Images\Home-Portfolio\img_9.jpg"></div>
+		<div class="row imgrow ">
+			<div class="col-sm-12 col-md-4 hoverstyle "><img src="Images\Home-Portfolio\img_7.jpg" ></div>
+			<div class="col-sm-12 col-md-4 hoverstyle  midimg"><img src="Images\Home-Portfolio\img_8.jpg" ></div>
+			<div class="col-sm-12 col-md-4 hoverstyle "><img src="Images\Home-Portfolio\img_9.jpg" ></div>
 		</div>
 	  </div>
 
 
 	</div>
-      
-      <div class="subcontainer" >
-       <div class="container  inform">
-       	 <div class="jumbotron" style="background-color: #7beec7">
-       	   <div class="row">
-       	   	<div class="col-md-6">
-       	   		<h2>STAY INFORMED 
-       	   		<p>WITH OUR NEWSLETTER</p></h2>
-       	   	</div>
-       	   	<div class="col-md-6" style="background-color: black;height: 100%">
-       	   
-       	   		<input type="email" name="email" placeholder="ENTER YOUR EMAIL" class="form-control">
-       	   		<br>
-       	   	    <button type="button" class="btn">SUBSCRIBE</button>
-       	   	   
-       	   	  
-       	   	</div>
-       	   </div>
-       	</div>
-       </div>
-      </div>
 
+
+
+    
+    <div class="subcontainer">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-md-6 box">
+    				<br><br><br><br>
+    				<div class="textarea">
+    					<h2>STAY INFORMED 
+       	   		        <p>WITH OUR NEWSLETTER</p></h2>
+    				</div>
+    			</div>
+    			<div class="col-md-6 mailbox ">
+    			     <div style="padding: 3%;background-color: black;">
+    			     	<div style="padding: 10% 8%;background-color: white;">
+    			     		<input type="email" name="email" placeholder="ENTER YOUR EMAIL" class="form-control">
+       	   		            <br>
+       	   	                <button type="button" class="btn" style="background-color: #7beec7">SUBSCRIBE</button>
+    			     	</div>
+    			     </div>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+
+
+   <!-- to top btn -->
+   <!-- <i class="fas fa-arrow-up" onclick="topFunction()" id="myBtn" title="Go to top"></i> -->
+   <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
 
   <footer>
    <div class="jumbotron">
@@ -173,13 +221,14 @@
    	   	   <div class="col-md-1"></div>
    	   	   <div class="col-md-4">
    	   	   	    <div class="row ">
-   	   	   	    <i class="fab fa-facebook-f"></i>
+   	   	   	    	<div class="iconlist">
+   	   	   	    <center><i class="fab fa-facebook-f"></i>
    	   	   	    <i class="fab fa-twitter"></i>
    	   	   	    <i class="fab fa-flickr"></i>
    	   	   	    <i class="fab fa-dribbble-square"></i>
    	   	   	    <i class="fab fa-pinterest"></i>
-   	   	   	    <i class="fab fa-linkedin-in"></i>
-   	   	   	    </div>
+   	   	   	    <i class="fab fa-linkedin-in"></i></center>
+   	   	   	    </div></div>
                 <br>
                 <div class="row">
                 	&copy 2015 OAK,ALL RIGHTS RESERVED

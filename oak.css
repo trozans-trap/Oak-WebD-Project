@@ -3,8 +3,13 @@
 	margin-top: 3%;
 	height: 800px;
 }*/
+.slidesub{
+	margin-right: ;
+}
+ 
 .subcontainer{
 	margin: 4% 0% 4% 0%;
+	position: relative;
 }
 
 .home{
@@ -12,7 +17,37 @@
 	height: 565px;
 	margin-top: 0.5%;
 }
+.sublisthead{
+	font-size: 2em;
+	font-weight: 550;
+}
+.sublisthead:hover{
+	color: #f1f1f1;
+}
 
+.sublisthead:hover .sublist{
+	display: block;
+}
+
+.sublist{
+	display: none;
+}
+.icons{
+	color: white;
+	letter-spacing: .6em;
+	font-size: 1.3em;
+}
+.sideicon{
+	margin-top: 80%;
+	
+}
+
+.textnav{
+	color: white;
+	font-size: 1.1em;
+	letter-spacing: 0.3;
+	margin-left: 50px;
+}
 .midimg{
 	
 }
@@ -20,3 +55,153 @@
 .imgrow{
 	margin-bottom: 2%;
 }
+
+
+
+
+.elegance{
+	font-size:2.8em;
+	letter-spacing:0.3em;
+	z-index: 1;
+	top: 45%;
+	left: 5%;
+	position: absolute;
+}
+
+
+
+
+
+/*sidebar*/
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  opacity: 0.95;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 35px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.list{
+	color: white;
+	top: 
+}
+
+/*.sublisthead:hover .sublist{display: block;}
+*/
+
+.sublisthead:hover{
+	color:#7beec7; 
+}
+
+.sublisthead:hover .sublist{
+	display: inline;
+
+}
+
+
+ul{
+   list-style: none;
+}
+
+/*...*/
+
+
+/*to top btn*/
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 2em;
+  border: none;
+  outline: none;
+  background-color: black;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  padding: 3px 15px;
+  border-radius: 3px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+  
+.box{
+	background: #7beec7;
+}  
+
+.mailbox{
+	background-color: black;
+	margin-left: 0;
+	padding: 3% 3%;
+}
+
+.btn{
+	
+	margin-left: 39%;
+}
+
+.iconlist{
+	margin-left: 20%;
+}
+
+.fab:hover{
+	color:  #7beec7;
+}
+
+.icons2{
+	font-size: 1.6em;
+	text-decoration: underline;
+}
+
+
+.hoverstyle{
+
+}
+
+/*grid hover*/
+.hoverstyle:hover
+  { /*position: fixed;*/
+  	opacity: 0.8;
+  	cursor: url(cursor.png),auto;
+  	/*border: 2px solid black;*/
+  	
+  }
+
+
