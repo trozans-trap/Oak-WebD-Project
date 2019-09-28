@@ -1,11 +1,3 @@
-/*.container-2{
-	background-image: url(Images\image_1.jpg);
-	margin-top: 3%;
-	height: 800px;
-}*/
-.slidesub{
-	margin-right: ;
-}
  
 .subcontainer{
 	margin: 4% 0% 4% 0%;
@@ -13,51 +5,68 @@
 }
 
 .home{
-	/*background-image: url(image_1.jpg);*/
 	height: 565px;
 	margin-top: 0.5%;
 }
-.sublisthead{
-	font-size: 2em;
-	font-weight: 550;
+
+.slider{
+	height: 23%;
+	width: 106%;
+	animation: name 20s linear infinite ;
 }
-.sublisthead:hover{
-	color: #f1f1f1;
+ @keyframes name{
+ 	0%{
+ 		transform:scale(1.1);
+ 	  }
+ 	50%{
+ 		transform:scale(0.9);
+ 	   }
+ 	}
+
+
+.row1{
+	position: relative;
+}
+.row2{
+	position: absolute;
+	background-color: #7beec7;
+	z-index: 1;
 }
 
-.sublisthead:hover .sublist{
-	display: block;
-}
+.green{ 
+	height: 25%;
+	width: 25%;
+	background-color: #7beec7;
+	/*position: absolute;*/
+      }
 
-.sublist{
-	display: none;
-}
+
+
+
+
+
 .icons{
 	color: white;
 	letter-spacing: .6em;
 	font-size: 1.3em;
 }
-.sideicon{
+/*.sideicon{
 	margin-top: 80%;
+	margin-left: 1%;
 	
-}
+}*/
 
 .textnav{
+	position: absolute;
 	color: white;
 	font-size: 1.1em;
 	letter-spacing: 0.3;
-	margin-left: 50px;
+	margin-left: 1%;
+	margin-top: 16%;
 }
 .midimg{
 	
 }
-
-.imgrow{
-	margin-bottom: 2%;
-}
-
-
-
 
 .elegance{
 	font-size:2.8em;
@@ -116,21 +125,36 @@
 
 .list{
 	color: white;
-	top: 
 }
 
-/*.sublisthead:hover .sublist{display: block;}
-*/
+.listhead{
+	font-weight: 400;
+	font-size: 1.7em;
+}
 
-.sublisthead:hover{
+.listhead:hover{
 	color:#7beec7; 
 }
 
-.sublisthead:hover .sublist{
-	display: inline;
-
+.list:hover .sublist{
+	display: block;
 }
 
+.sublist{
+	display: none;
+}
+
+.sublist a{
+	display: block;
+	text-decoration: none;
+	color: white;
+	font-size: 1.0em;
+}
+
+.sublist a:hover{
+	text-decoration: none;
+	color: #7beec7;
+}
 
 ul{
    list-style: none;

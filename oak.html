@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+
 	<!-- Title+icon -->
 	<title>OAK</title>
 	<link rel="icon" href="Images\favicon.ico">
@@ -17,6 +19,10 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     
+
+    <script type="text/javascript" src="typed.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -25,48 +31,46 @@
        
 	<div class="container">
 	  <div class="subcontainer">
-		<nav class="" style="width: 108%">
+		<nav class="" style="width: %">
 			<img src="Images\logo.png" class="img-fluid">
             <span style="font-size:30px;cursor:pointer;margin-left: 88%;" onclick="openNav()">&#9776;</span>
             <div id="mySidenav" class="sidenav">
               <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-               <ul class="list">
-               	<li>
-               		<span class="sublisthead">HOME</span>
-                    <ul class="sublist">
-                    	<li>Default</li>
-                    	<li>Architecture</li>
-                    	<li>Slider Full Width</li>
-                    </ul>
-               	</li>
-               	<li>
-               		<span class="sublisthead">ABOUT</span>
-               	</li>
-               	<li>
-               		<span class="sublisthead">PORTFOLIO</span>
-                    <ul class="sublist">
-                    	<li>Portfolio 1 column</li>
-                    	<li>Portfolio 2 column</li>
-                    	<li>Portfolio Masonry </li>
-                    	<li>Portfolio dribble </li>
+                 <div style="margin-left:3%;margin-top:5%;position:fixed;">
+                 <div class="list">
+  	               <div class="listhead">HOME</div>
+	               <div class="sublist">
+		               <a href="#">- Default</a>
+                       <a href="#">- Architecture</a>
+		               <a href="#">- Slider Full Width</a>
+	               </div>
+                 </div>
+                 <div class="list">
+  	               <div class="listhead">ABOUT</div>
+  	             </div>
+                 <div class="list">
+  	               <div class="listhead">PORTFOLIO</div>
+	               <div class="sublist">
+		               <a href="">- Portfolio 1 column</a>
+                       <a href="">- Portfolio 2 column</a>
+		               <a href="">- Portfolio Masonry</a>
+		               <a href="">- Portfolio dribble</a>
+	               </div>
+                 </div>
 
-                    </ul>
-               	</li>
-               	<li>
-               		<span class="sublisthead">BLOG</span>
-                    <ul class="sublist">
-                    	<li>Blog Default</li>
-                    	<li>Blog Timeline</li>
-                    	<li>Blog Single</li>
-
-                    </ul>
-               	</li>
-               	<li>
-               		<span class="sublisthead">CONTACT</span>
-               	</li>
-               </ul>
-
-               <div class=" sideicon row" style="margin-left: 50px;">
+                  <div class="list">
+  	               <div class="listhead">BLOG</div>
+	               <div class="sublist">
+		               <a href="#">- Blog Default</a>
+                       <a href="#">- Blog Timeline</a>
+		               <a href="#">- Blog Single</a>
+	               </div>
+                 </div>
+                 <div class="list">
+  	                 <div class="listhead">CONTACT</div>
+  	             </div>
+  	             <div class="sideicon " style="position: fixed;top: 80%;margin-left: 2%" >
+               <div class="row" >
                	<center><i class="fab fa-facebook-f icons"></i>
    	   	   	    <i class="fab fa-twitter icons"></i>
    	   	   	    <i class="fab fa-flickr icons"></i>
@@ -74,23 +78,32 @@
    	   	   	    <i class="fab fa-pinterest icons"></i>
    	   	   	    <i class="fab fa-linkedin-in icons"></i></center>
                </div>
+               </div>
                <br>
-               <div class="textnav" >
+               <div class="textnav" style="position: fixed;top: 50%" >
                	T: 003 124 115
-                E: info@mail.com
+                <p>E: info@mail.com</p>
                </div>
             </div>
-			
-		</nav>
-	   </div>
+        </nav>
+	</div>
 
      
-       <div class="subcontainer">
+       <div class="subcontainer" style="overflow: hidden;">
        	  <img class="slider" src="Images\image_1.jpg">
           <img class="slider" src="Images\image_2.jpg">
           <img class="slider" src="Images\image_3.jpg">
           <div class="elegance" >
               <span style="font-weight:800">Pure</span><span class="back" style="background:#7beec7;">Elegance</span>         	
+          </div>
+          <div class="elegance" style="font-size: 1.7em;top: 60%;" >
+          	    <div id="wrapper" class="wrapper">
+	                <div id="typed-strings">
+		                <p>Awesome Theme</p>
+                        <p>Creative Solutions</p>	
+	                </div>
+                </div>
+	            <span id="typed"></span> 
           </div>
        </div>
 
@@ -98,10 +111,10 @@
         <!-- imgslider -->
 		<div class="subcontainer">
 			<div class="row">
-				<div class="col-md-7">
+				<div class="col-md-7" style="font-size: 1.2em">
 					<br>
 					<br>
-					<br><br><br>
+					<br><br>
 					<h3>HISTORY OF AGENCY</h3>
                      WHO LOVES OR PURSUES OR DESIRES TO OBTAIN PAIN OF ITSELF, BUT BECAUSE OCCASIONALLY CIRCUMSTANCES OCCUR AND PAIN CAN PROCURE HIM SOME GREAT PLEASURE
                      <br>
@@ -109,16 +122,26 @@
                      <br>
                      <br>
 				</div>
-				<div class="col-md-4">
-					<img class="slide" src="Images\about_img.jpg">
-                    <img class="slide" src="Images\about_img2.jpg">
-                    <img class="slide" src="Images\about_img3.jpg">
-				</div>
-			</div>
-		</div>
+				<div class="col-md-5" style="padding-right: 1px;">
+                 <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+                   <div class="carousel-inner">
+                     <div class="carousel-item active" data-interval="4000">
+                       <img src="Images\about_img.jpg" class="d-block w-100" alt="...">
+                     </div>
+                     <div class="carousel-item" data-interval="4000">
+                       <img src="Images\about_img2.jpg" class="d-block w-100" alt="...">
+                     </div>
+                     <div class="carousel-item">
+                       <img src="Images\about_img3.jpg" class="d-block w-100" alt="...">
+                     </div>
+                   </div>
+                 </div>
+            </div>
+        </div>
+</div>
 
 		<div class="subcontainer" >
-           <h3><span>WHY</span> CHOOSE US?</h3>
+           <h3><span style="text-decoration: underline;">WHY</span> CHOOSE US?</h3>
 		   <p>Expect to Obtain some advantage from it</p>
 		</div>
 
@@ -146,31 +169,47 @@
 
 	  <div class="subcontainer">
 		<div>
-			<h3><span>OUR WORK</span></h3>
+			<h3><span style="text-decoration: underline">OUR </span> WORK</h3>
 			<p>Laborious to obtain some advantage from it</p>
 			<br>
 		</div>
 	  </div>
 
+	  <div>
+	  	  <p>
+	  	   <span style="font-size:30px;cursor:pointer;background: #7beec7;padding:.5%" onclick="openNav2()"><span id="bt">&#9776;</span></span>&nbsp
+	  	   	<!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+	  	   <span id="hidnav" style="opacity: 0;font-size:1.2em;letter-spacing: .1em; ">
+	  	   	 All  Branding  Web Design  Graphic Design</p>
+	  	   </span>
+	  </div>
+
         <!-- image-grid -->
 
-      <div class="subcontainer">
-		<div class="row imgrow ">
-			<div class="col-sm-12 col-md-4 hoverstyle "><img src="Images\Home-Portfolio\img_1.jpg" ></div>
+    <div class="subcontainer">
+      <div class="grid" style="grid-gap: 2%">
+		<div class="row imgrow row1 " style="margin-bottom:1%">
+			<div class="col-sm-12 col-md-4 hoverstyle greenhead "><img src="Images\Home-Portfolio\img_1.jpg" ></div>
 			<div class="col-sm-12 col-md-4 hoverstyle  midimg"><img src="Images\Home-Portfolio\img_2.jpg" ></div>
 			<div class="col-sm-12 col-md-4 hoverstyle "><img src="Images\Home-Portfolio\img_3.jpg" ></div>
 		</div>
-		<div class="row imgrow ">
+		<div class="row row2" style="margin-bottom:1%">
+			<div class="col-sm-12 col-md-4 green"></div>
+			<div class="col-sm-12 col-md-4 green"></div>
+			<div class="col-sm-12 col-md-4 green"></div>
+		</div>
+		<div class="row imgrow " style="margin-bottom:1%">
 			<div class="col-sm-12 col-md-4 hoverstyle "><img src="Images\Home-Portfolio\img_4.jpg" ></div>
 			<div class="col-sm-12 col-md-4 hoverstyle  midimg"><img src="Images\Home-Portfolio\img_5.jpg" ></div>
 			<div class="col-sm-12 col-md-4 hoverstyle "><img src="Images\Home-Portfolio\img_6.jpg" ></div>
 		</div>
-		<div class="row imgrow ">
+		<div class="row imgrow " style="margin-bottom:1%">
 			<div class="col-sm-12 col-md-4 hoverstyle "><img src="Images\Home-Portfolio\img_7.jpg" ></div>
 			<div class="col-sm-12 col-md-4 hoverstyle  midimg"><img src="Images\Home-Portfolio\img_8.jpg" ></div>
 			<div class="col-sm-12 col-md-4 hoverstyle "><img src="Images\Home-Portfolio\img_9.jpg" ></div>
 		</div>
 	  </div>
+	</div>
 
 
 	</div>
@@ -242,12 +281,21 @@
                     <li>E:info@mail.com</li>
                     <li>W:www.website.com</li>
    	   	   </div>
+
           </div>
    	</div> 
    </div>
   </footer>
 
+    <script>
+	$("document").ready(function(){
+		var typed = new Typed("#typed",{
+			stringsElement: '#typed-strings'
+		});
+	});
+		
 
+    </script>
 
    <script type="text/javascript" src="oak.js"></script>
 

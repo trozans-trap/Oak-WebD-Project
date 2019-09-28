@@ -12,7 +12,7 @@ function carousel() {
   myIndex++;
   if (myIndex > x.length) {myIndex = 1}    
   x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 4000); 
+  setTimeout(carousel, 3000); 
 }
 
 
@@ -42,7 +42,17 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 
+var i=0;
+function openNav2(){
+  var y =document.getElementById("hidnav");
+  if(i%2==0)
+  {y.style.opacity=1;}
+  else
+    {y.style.opacity=0;}
+  i++;
 
+
+}
 
 
 //Get the button
@@ -64,3 +74,11 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+
+
+$("document").ready(function(){
+    var typed = new Typed("#typed",{
+      stringsElement: '#typed-strings'
+    });
+  });
