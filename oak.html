@@ -21,8 +21,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
      
 
-    <script type="text/javascript" src="typed.js"></script> 
-    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <!-- <script type="text/javascript" src="typed.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script> -->
 </head>
 
 <body>
@@ -31,10 +31,11 @@
        
 	<div class="container">
 	  <div class="subcontainer">
-		<nav class="" style="width: %">
+		<nav>
 			<img src="Images\logo.png" class="img-fluid">
             <span style="font-size:30px;cursor:pointer;margin-left: 88%;" onclick="openNav()">&#9776;</span>
             <div id="mySidenav" class="sidenav">
+
               <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                  <div style="margin-left:3%;margin-top:5%;position:fixed;">
                  <div class="list">
@@ -80,11 +81,12 @@
                </div>
                </div>
                <br>
-               <div class="textnav" style="position: fixed;top: 50%" >
+               <div class="textnav" style="position: fixed;top: 55%" >
                	T: 003 124 115
                 <p>E: info@mail.com</p>
                </div>
             </div>
+          </div>
         </nav>
 	</div>
 
@@ -94,18 +96,17 @@
           <img class="slider" src="Images\image_2.jpg">
           <img class="slider" src="Images\image_3.jpg">
           <div class="elegance" >
-              <span style="font-weight:800">Pure</span><span class="back" style="background:#7beec7;">Elegance</span>         	
+              <span style="font-weight:800">Pure</span><span style="background:#7beec7;">Elegance</span>         	
           </div>
-          <div class="elegance" style="font-size: 1.7em;top: 60%;" >
-          	    <div id="wrapper" class="wrapper">
-	                <div id="typed-strings">
-		                <p>Awesome Theme</p>
-                        <p>Creative Solutions</p>	
-	                </div>
+          <div class="elegance2" >
+                <div class="agile_banner_info">
+                      <span id="typed" style="white-space:pre;"></span>
                 </div>
-	            <span id="typed"></span> 
           </div>
-       </div>
+        </div>
+      
+
+          
 
 
         <!-- imgslider -->
@@ -122,17 +123,17 @@
                      <br>
                      <br>
 				</div>
-				
+
 				<div class="col-md-5" style="padding-right: 1px;">
                  <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
                    <div class="carousel-inner">
-                     <div class="carousel-item active" data-interval="4000">
+                     <div class="carousel-item active" data-interval="1000">
                        <img src="Images\about_img.jpg" class="d-block w-100" alt="...">
                      </div>
-                     <div class="carousel-item" data-interval="4000">
+                     <div class="carousel-item" data-interval="1000">
                        <img src="Images\about_img2.jpg" class="d-block w-100" alt="...">
                      </div>
-                     <div class="carousel-item">
+                     <div class="carousel-item" data-interval="1000">
                        <img src="Images\about_img3.jpg" class="d-block w-100" alt="...">
                      </div>
                    </div>
@@ -181,7 +182,10 @@
 	  	   <span style="font-size:30px;cursor:pointer;background: #7beec7;padding:.5%" onclick="openNav2()"><span id="bt">&#9776;</span></span>&nbsp
 	  	   	<!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
 	  	   <span id="hidnav" style="opacity: 0;font-size:1.2em;letter-spacing: .1em; ">
-	  	   	 All  Branding  Web Design  Graphic Design</p>
+	  	   	 <button class="btn" style="color: #7beec7;">All</button>
+	  	   	 <button class="btn">Branding</button>  
+	  	   	 <button class="btn">Web Design</button> 
+	  	   	 <button class="btn">Graphic Design</button></p>
 	  	   </span>
 	  </div>
 
@@ -190,22 +194,29 @@
     <div class="subcontainer">
       <div class="grid" style="grid-gap: 2%">
 		<div class="row imgrow row1 " style="margin-bottom:1%">
-			<div class="col-sm-12 col-md-4 hoverstyle greenhead "><img src="Images\Home-Portfolio\img_1.jpg" ></div>
-			<div class="col-sm-12 col-md-4 hoverstyle  midimg"><img src="Images\Home-Portfolio\img_2.jpg" ></div>
+			<div class="col-sm-12 col-md-4 hoverstyle greenhead " style="position: relative;"><img src="Images\Home-Portfolio\img_1.jpg" ></div>
+			<div class="hoverimg1">
+				<i class="far fa-heart" style="font-size:1.9em;left:-25px"></i>
+			</div>
+			<div class="col-sm-12 col-md-4 hoverstyle  midimg" style="position: relative;"><img src="Images\Home-Portfolio\img_2.jpg" ></div>
+			    <!-- <div class="hoverimg3">
+				    <i class="far fa-heart" style="font-size:1.9em;left:-25px"></i>
+			    </div> -->
 			<div class="col-sm-12 col-md-4 hoverstyle "><img src="Images\Home-Portfolio\img_3.jpg" ></div>
-		</div>
-		<div class="row row2" style="margin-bottom:1%">
-			<div class="col-sm-12 col-md-4 green"></div>
-			<div class="col-sm-12 col-md-4 green"></div>
-			<div class="col-sm-12 col-md-4 green"></div>
 		</div>
 		<div class="row imgrow " style="margin-bottom:1%">
 			<div class="col-sm-12 col-md-4 hoverstyle "><img src="Images\Home-Portfolio\img_4.jpg" ></div>
+			<div class="hoverimg2">
+				<i class="far fa-heart" style="font-size:1.9em;left:-25px"></i>
+			</div>
 			<div class="col-sm-12 col-md-4 hoverstyle  midimg"><img src="Images\Home-Portfolio\img_5.jpg" ></div>
 			<div class="col-sm-12 col-md-4 hoverstyle "><img src="Images\Home-Portfolio\img_6.jpg" ></div>
 		</div>
 		<div class="row imgrow " style="margin-bottom:1%">
 			<div class="col-sm-12 col-md-4 hoverstyle "><img src="Images\Home-Portfolio\img_7.jpg" ></div>
+			<div class="hoverimg2">
+				<i class="far fa-heart" style="font-size:1.9em;left:-25px"></i>
+			</div>
 			<div class="col-sm-12 col-md-4 hoverstyle  midimg"><img src="Images\Home-Portfolio\img_8.jpg" ></div>
 			<div class="col-sm-12 col-md-4 hoverstyle "><img src="Images\Home-Portfolio\img_9.jpg" ></div>
 		</div>
@@ -288,21 +299,30 @@
    </div>
   </footer>
 
-    <script>
-	$("document").ready(function(){
-		var typed = new Typed("#typed",{
-			stringsElement: '#typed-strings'
-		});
-	});
-		
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
+   
+    <script>
+    	$(function(){
+      $("#typed").typed({
+        strings: ["CREATIVE SOLUTIONS", "MODERN COMBINATION","AWESOME THEME"],
+        typeSpeed: 110, // typing speed
+        backDelay: 500, // pause before backspacing
+        loop: true,
+      });
+     });
     </script>
+
+
+
+
 
    <script type="text/javascript" src="oak.js"></script>
 
 
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>

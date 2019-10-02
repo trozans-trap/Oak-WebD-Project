@@ -6,36 +6,20 @@ carousel();
 function carousel() {
   var i;
   var x = document.getElementsByClassName("slider");
-  for (i = 0; i < x.length; i++) {
+  for (i = 0; i < x.length; i++){
     x[i].style.display = "none";  
   }
   myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
+  if (myIndex > x.length) {myIndex = 1}  
+
   x[myIndex-1].style.display = "block";  
   setTimeout(carousel, 3000); 
 }
 
-
-var newmyIndex = 0;
-newcarousel();
-
-function newcarousel() {
-  var j;
-  var y = document.getElementsByClassName("slide");
-  for (j = 0; j < y.length; j++) {
-    y[j].style.display = "none";  
-  }
-  newmyIndex++;
-  if (newmyIndex > y.length) {newmyIndex = 1}    
-  y[newmyIndex-1].style.display = "block";  
-  setTimeout(newcarousel, 3000); 
-}
-
-
 // sidenavbar
 
 function openNav() {
-  document.getElementById("mySidenav").style.width = "420px";
+  document.getElementById("mySidenav").style.width = "398px";
 }
 
 function closeNav() {
@@ -77,8 +61,32 @@ function topFunction() {
 
 
 
-$("document").ready(function(){
-    var typed = new Typed("#typed",{
-      stringsElement: '#typed-strings'
-    });
-  });
+// var img1 =document.getElementsByClassName("hideimg1");
+// var img2 =document.getElementsByClassName("hideimg2");
+
+// function imgdisplay1()
+// {
+
+// }
+// function imgdisplay2()
+// {
+//    img1.style.display="none";
+//    img2.style.display="none";
+// }
+// function imgdisplay3()
+// {
+
+// }
+// function imgdisplay4()
+// {
+
+// }
+
+
+// var img3 =document.querySelector(".hello123");
+// var imgType =document.querySelector(".butn2");
+
+
+// imgType.addEventListener("click" , function(){
+//   img3.style.display="none";
+// })
